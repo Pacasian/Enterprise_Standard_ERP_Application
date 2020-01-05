@@ -19,3 +19,10 @@ Admin have the authorisation to modify, add and delete the records from the Data
 </br>
 <img src="Screenshot (3).png" width="400">
 
+</br>
+## Code snippet :
+<b> Connection between the SQL Server and VB.Net :</b>
+```
+ Import System.Data.SqlClient
+ Dim <i>Variable_Name</i> As New SqlConnection("server=<i>server_name</i>, database=<i>database_name</i>, integrated security=SSPI ")
+```
