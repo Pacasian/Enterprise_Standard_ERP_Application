@@ -14,7 +14,7 @@ Employee/ Worker can only view his/her data which had been recorded in the datab
 <b>Edit Control:</b></br>
 Admin have the authorisation to modify, add and delete the records from the Database which contain the data of all members of Enterprise. Head of Department have controlled power over the employees under their command/divisio where they can modify the data related to their role. The Employee can only modify their personal information. 
 
-<b>Synopsis :</b>
+<b>Synopsis :</b></br>
 <img src="Screenshot (2).png" width="400">
 </br>
 <img src="Screenshot (3).png" width="400">
