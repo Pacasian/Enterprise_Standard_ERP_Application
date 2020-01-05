@@ -53,6 +53,28 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public Property PASSWORD() As Boolean
+            Get
+                Return CType(Me("PASSWORD"),Boolean)
+            End Get
+            Set
+                Me("PASSWORD") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=TEAMIT-PC;Initial Catalog=testclass;Integrated Security=True")>  _
+        Public ReadOnly Property testclassConnectionString() As String
+            Get
+                Return CType(Me("testclassConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
