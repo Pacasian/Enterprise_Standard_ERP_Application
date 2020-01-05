@@ -25,7 +25,13 @@ Admin have the authorisation to modify, add and delete the records from the Data
 ```c#
  Import System.Data.SqlClient 
  
- Dim Variable_Name As New SqlConnection("server=server_name, database=database_name, integrated security=SSPI ")
+ Dim variable_name_for_connection As New SqlConnection("server=server_name, database=database_name, integrated security=SSPI ")
+ ```
+
+<b> Query execution in the VB.NET :</b>
+```c#
+ Dim variable_name_for_query As String "Select * from table_name"
+ Dim variable_name2 As New SqlCommand( variable_name_for_connection, variable_name_for_query)
  ```
 
 
